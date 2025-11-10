@@ -22,6 +22,15 @@ public class Main {
        SistemaFrenos frenos = new SistemaFrenos("Disco Ventilado", "Tambor", true, 280, 85, 90);
         frenos.mostrarSistemaFrenos();
 
+        RegistroVehicular registro = new RegistroVehicular("ABC-123", "Juan Noriega", "2021-05-30");
+        registro.mostrarRegistro();
+
+        Mantenimiento manteniento1 = new Mantenimiento("2024-08-10", "Cambio de aceite y revisión general", "2025-02-10", "Cambio de filtros y alineación", 45.000, 50.000);
+        manteniento1.mostrarMantenimiento();
+
+        Sensor sensor1 = new Sensor("Temperatura del Motor", "°C", 87, true, "SENS-TEMP-01");
+        sensor1.mostrarSensor();
+
     
     }
     
