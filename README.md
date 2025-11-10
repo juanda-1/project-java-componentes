@@ -1,18 +1,55 @@
-## Getting Started
+Nombre del proyecto
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Registro Vehicular
 
-## Folder Structure
+Descripción general
 
-The workspace contains two folders by default, where:
+Este proyecto implementa un sistema orientado a objetos en Java que modela distintos componentes de un vehículo, tales como motor, chasis, transmisión, frenos, neumáticos, sensores, sistema eléctrico, registro vehicular y mantenimiento.
+Cada clase representa una parte importante del vehículo y contiene atributos y métodos esenciales para su funcionamiento.
+Además, se crean objetos en el método main y se muestran sus datos en consola.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Diagrama o descripción de las clases y sus relaciones
+Clases principales
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Vehiculo
+Atributos generales de cualquier vehículo: marca, modelo, año, color, peso, etc.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Motor
+Tipo de motor, cilindrada, caballos de fuerza, consumo, etc.
 
-## Dependency Management
+Transmision
+Tipo de transmisión, número de marchas y relación.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Chasis
+Material, dimensiones, peso estructural.
+
+Neumatico
+Tipo de caucho, tamaño, presión recomendada.
+
+SistemaFrenos
+Tipo de frenos y eficiencia.
+
+SistemaElectrico
+Voltaje, capacidad, tipo de batería.
+
+Sensor
+Modela sensores individuales del vehículo (velocidad, temperatura, presión, etc).
+
+Mantenimiento
+Historial y programación de mantenimientos realizados.
+
+RegistroVehicular
+Matrícula, propietario y fecha de registro.
+
+Relación general entre clases
+                     Vehiculo
+        -------------------------------------------------
+        |                |             |                |
+      Motor         Transmision     Chasis         SistemaElectrico
+        |                |             |                |
+        -------------------------------------------------
+        |                |             |                |
+    SistemaFrenos     Neumatico     Sensor         Mantenimiento
+
+![Captura de la salida 1](./capturas/salida1.png)
+![Captura de la salida 2](./capturas/salida2.png)
