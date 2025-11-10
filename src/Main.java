@@ -16,6 +16,12 @@ public class Main {
         Neumatico neumatico1 = new Neumatico("Michelin", "All-Terrain", "225/65 R17", 102, 72 );
         neumatico1.mostrarNeumatico();
 
+        SistemaElectrico sistemaElectrico1 = new SistemaElectrico(12, 120, "AGM", 70, true, 25);
+        sistemaElectrico1.mostrarSistemaElectrico();
+
+       SistemaFrenos frenos = new SistemaFrenos("Disco Ventilado", "Tambor", true, 280, 85, 90);
+        frenos.mostrarSistemaFrenos();
+
     
     }
     
